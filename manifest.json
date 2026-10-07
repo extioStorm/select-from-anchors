@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Selection Anchor",
+  "version": "1.0",
+  "description": "Sets selection start and end anchor points to select large text blocks without touch drops.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["extension.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
